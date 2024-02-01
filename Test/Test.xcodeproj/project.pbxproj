@@ -13,6 +13,7 @@
 		75ADA96A2B6A4AEF009697D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75ADA9692B6A4AEF009697D2 /* Preview Assets.xcassets */; };
 		75ADA9712B6A681B009697D2 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA9702B6A681B009697D2 /* ProductCardView.swift */; };
 		75ADA9732B6A686D009697D2 /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA9722B6A686D009697D2 /* ReviewCardView.swift */; };
+		75ADA9752B6BE5A1009697D2 /* OvalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA9742B6BE5A1009697D2 /* OvalButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		75ADA9692B6A4AEF009697D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75ADA9702B6A681B009697D2 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		75ADA9722B6A686D009697D2 /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
+		75ADA9742B6BE5A1009697D2 /* OvalButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				75ADA9682B6A4AEF009697D2 /* Preview Content */,
 				75ADA9702B6A681B009697D2 /* ProductCardView.swift */,
 				75ADA9722B6A686D009697D2 /* ReviewCardView.swift */,
+				75ADA9742B6BE5A1009697D2 /* OvalButtonView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				75ADA9652B6A4AED009697D2 /* ContentView.swift in Sources */,
 				75ADA9732B6A686D009697D2 /* ReviewCardView.swift in Sources */,
 				75ADA9632B6A4AED009697D2 /* TestApp.swift in Sources */,
+				75ADA9752B6BE5A1009697D2 /* OvalButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

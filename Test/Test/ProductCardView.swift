@@ -9,42 +9,42 @@ import SwiftUI
 
 struct ProductCardView: View {
     var body: some View {
-        HStack() {
-            Button(action: {}
-            ) {
-                Image(systemName: "arrow.backward")
-                    .resizable()
-                    .frame(width: 23, height: 20)
-                    .foregroundColor(.green)
-                    
-            }
-            .padding(5)
-            Spacer()
-            Button(action: {}) {
-                Image(systemName: "cart")
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .foregroundColor(.green)
-            }
-            .padding(5)
-            Button(action: {}) {
-                Image(systemName: "square.and.arrow.up")
-                    .resizable()
-                    .frame(width: 20, height: 25)
-                    .foregroundColor(.green)
-            }
-            .padding(5)
-            Button(action: {}) {
-                Image(systemName: "heart")
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .foregroundColor(.green)
-            }
-            .padding(5)
-        }
-        Divider()
         ScrollView{
-            LazyVStack(alignment: .leading, spacing: 20.0) {
+                    HStack() {
+                        Button(action: {}
+                        ) {
+                            Image(systemName: "arrow.backward")
+                                .resizable()
+                                .frame(width: 23, height: 20)
+                                .foregroundColor(.green)
+            
+                        }
+                        .padding(5)
+                        Spacer()
+                        Button(action: {}) {
+                            Image(systemName: "cart")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.green)
+                        }
+                        .padding(5)
+                        Button(action: {}) {
+                            Image(systemName: "square.and.arrow.up")
+                                .resizable()
+                                .frame(width: 20, height: 25)
+                                .foregroundColor(.green)
+                        }
+                        .padding(5)
+                        Button(action: {}) {
+                            Image(systemName: "heart")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.green)
+                        }
+                        .padding(5)
+                    }
+                    Divider()
+            VStack(alignment: .leading, spacing: 20.0) {
                 Image("productCard")
                 Text("Добавка \"Липа\" к чаю 200 г")
                     .font(.system(size: 26, weight: .bold, design: .rounded))
@@ -105,6 +105,14 @@ struct ProductCardView: View {
                     Spacer()
                 }
 
+            }
+            .padding()
+            Divider()
+            HStack {
+                Text("55.9 р/кг")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                Spacer()
+                OvalButtonView()
             }
             .padding()
         }
