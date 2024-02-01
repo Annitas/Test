@@ -9,6 +9,40 @@ import SwiftUI
 
 struct ProductCardView: View {
     var body: some View {
+        HStack() {
+            Button(action: {}
+            ) {
+                Image(systemName: "arrow.backward")
+                    .resizable()
+                    .frame(width: 23, height: 20)
+                    .foregroundColor(.green)
+                    
+            }
+            .padding(5)
+            Spacer()
+            Button(action: {}) {
+                Image(systemName: "cart")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.green)
+            }
+            .padding(5)
+            Button(action: {}) {
+                Image(systemName: "square.and.arrow.up")
+                    .resizable()
+                    .frame(width: 20, height: 25)
+                    .foregroundColor(.green)
+            }
+            .padding(5)
+            Button(action: {}) {
+                Image(systemName: "heart")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.green)
+            }
+            .padding(5)
+        }
+        Divider()
         ScrollView{
             LazyVStack(alignment: .leading, spacing: 20.0) {
                 Image("productCard")
@@ -56,9 +90,7 @@ struct ProductCardView: View {
                 }
                 HStack {
                     Spacer()
-                    Button(action: {
-                        // action
-                    }
+                    Button(action: { }
                     ) {
                         Text("Оставить отзыв")
                             .font(.system(size: 18, weight: .bold, design: .rounded))
