@@ -36,12 +36,12 @@ struct ReviewCardView: View {
         }
         .padding()
         .background(Color.white)
-        .frame(width: 290, height: 170)
         .cornerRadius(15)
+        .frame(width: 290, height: 170)
         .shadow(radius: 2)
     }
 }
 
 #Preview {
-    ReviewCardView()
+    ProductCardView()
 }

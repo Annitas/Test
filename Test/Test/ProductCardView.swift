@@ -126,15 +126,7 @@ struct ProductCardView: View {
             }
             .padding()
             Divider()
-//            ChoiceButtonView()
-//            HStack {
-//                Text("55.9 р/кг")
-//                    .font(.system(size: 30, weight: .bold, design: .rounded))
-//                Spacer()
             BottomPanelView()
-//                .padding(10)
-//            }
-//            .padding()
         }
     }
 }
