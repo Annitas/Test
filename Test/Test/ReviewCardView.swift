@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-//struct ReviewCardView: View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
-//
-
 struct ReviewCardView: View {
     var body: some View {
         VStack(alignment: .leading) {
@@ -36,12 +29,12 @@ struct ReviewCardView: View {
         }
         .padding()
         .background(Color.white)
-        .frame(width: 290, height: 170)
         .cornerRadius(15)
+        .frame(width: 290, height: 170)
         .shadow(radius: 2)
     }
 }
 
 #Preview {
-    ReviewCardView()
+    ProductCardView()
 }

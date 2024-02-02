@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7584F3A12B6D5E280019C43F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7584F3A02B6D5E280019C43F /* Localizable.xcstrings */; };
 		75ADA9632B6A4AED009697D2 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA9622B6A4AED009697D2 /* TestApp.swift */; };
 		75ADA9652B6A4AED009697D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA9642B6A4AED009697D2 /* ContentView.swift */; };
 		75ADA9672B6A4AEF009697D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75ADA9662B6A4AEF009697D2 /* Assets.xcassets */; };
@@ -17,12 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7584F3A02B6D5E280019C43F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		75ADA95F2B6A4AED009697D2 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75ADA9622B6A4AED009697D2 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		75ADA9642B6A4AED009697D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75ADA9662B6A4AEF009697D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75ADA9692B6A4AEF009697D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		75ADA9702B6A681B009697D2 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		75ADA9702B6A681B009697D2 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		75ADA9722B6A686D009697D2 /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
 		75ADA9742B6BE5A1009697D2 /* BottomPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7584F3992B6D57580019C43F /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				7584F3A02B6D5E280019C43F /* Localizable.xcstrings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
 		75ADA9562B6A4AED009697D2 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		75ADA9612B6A4AED009697D2 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				7584F3992B6D57580019C43F /* Localizables */,
 				75ADA9622B6A4AED009697D2 /* TestApp.swift */,
 				75ADA9642B6A4AED009697D2 /* ContentView.swift */,
 				75ADA9662B6A4AEF009697D2 /* Assets.xcassets */,
@@ -117,6 +128,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 				Base,
 			);
 			mainGroup = 75ADA9562B6A4AED009697D2;
@@ -136,6 +148,7 @@
 			files = (
 				75ADA96A2B6A4AEF009697D2 /* Preview Assets.xcassets in Resources */,
 				75ADA9672B6A4AEF009697D2 /* Assets.xcassets in Resources */,
+				7584F3A12B6D5E280019C43F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
