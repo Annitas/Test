@@ -9,15 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("productCard")
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Добавка \"Липа\" к чаю 200 г")
-            Text("Испания, Риоха")
+        TabView {
+            ProductCardView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Главная")
+                }
+            Text("Second")
+                .tabItem {
+                    Image(systemName: "square.grid.3x3.fill")
+                    Text("Каталог")
+                }
+            Text("Third")
+                .tabItem {
+                    Image(systemName: "cart")
+                    Text("Корзина")
+                }
+            Text("Fourth")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Профиль")
+            }
         }
-        .padding()
     }
 }
 
