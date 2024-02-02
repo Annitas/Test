@@ -43,9 +43,30 @@ struct ProductCardView: View {
                         }
                         .padding(5)
                     }
+                    .padding(.horizontal, 15.0)
+                    
                     Divider()
             VStack(alignment: .leading, spacing: 20.0) {
+                ZStack {
+                    Color.green
+                    Text("Цена по карте")
+                        .foregroundColor(.white)
+                        .padding(3)
+                }
+                .frame(width: 125)
+                .cornerRadius(5)
+                    
                 Image("productCard")
+                
+                HStack {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.orange)
+                    Text("4.1")
+                        .font(.system(size: 18, weight: .bold, design: .rounded))
+                    Text("| 19 отзывов")
+                        .foregroundColor(.gray)
+                }
+                
                 Text("Добавка \"Липа\" к чаю 200 г")
                     .font(.system(size: 26, weight: .bold, design: .rounded))
                 HStack {
@@ -71,9 +92,6 @@ struct ProductCardView: View {
                     .font(.system(size: 18, weight: .regular, design: .rounded))
                 Text("Углеводы/100г")
                     .font(.system(size: 18, weight: .regular, design: .rounded))
-                
-                
-                
                 Text("Все характеристики")
                     .font(.system(size: 20, weight: .bold, design: .rounded))
                     .foregroundColor(.green)
@@ -108,13 +126,15 @@ struct ProductCardView: View {
             }
             .padding()
             Divider()
-            HStack {
-                Text("55.9 р/кг")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
-                Spacer()
-                OvalButtonView()
-            }
-            .padding()
+//            ChoiceButtonView()
+//            HStack {
+//                Text("55.9 р/кг")
+//                    .font(.system(size: 30, weight: .bold, design: .rounded))
+//                Spacer()
+            BottomPanelView()
+//                .padding(10)
+//            }
+//            .padding()
         }
     }
 }
